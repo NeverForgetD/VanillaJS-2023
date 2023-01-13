@@ -1,0 +1,27 @@
+:root {
+    --main-color: #02343F;
+    --sub-color: #F0EDCC;
+}
+
+
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.main-box {
+    width: 80%;
+    background-color: var(--main-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line {
+    color: var(--sub-color);
+
+}
