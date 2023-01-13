@@ -3,7 +3,6 @@
     --sub-color: #F0EDCC;
 }
 
-
 body {
     display:flex;
     align-items: center;
@@ -23,5 +22,5 @@ body {
 
 .line {
     color: var(--sub-color);
-
+    font-family: 'Press Start 2P', cursive;
 }
