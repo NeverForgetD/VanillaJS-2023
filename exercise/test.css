@@ -3,13 +3,27 @@
     --sub-color: #F0EDCC;
 }
 
+@keyframes blinkAnimation {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 body {
     display:flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--main-color);
 }
-
-
 
 .main-box {
     width: 80%;
@@ -18,9 +32,17 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 3px;
+    border-style: solid;
+    border-color: var(--sub-color);
+    border-radius: 10px;
 }
 
 .line {
     color: var(--sub-color);
     font-family: 'Press Start 2P', cursive;
+}
+
+.animate-blink {
+    animation: blinkAnimation infinite 1.2s;
 }
