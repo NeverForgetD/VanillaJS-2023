@@ -68,3 +68,8 @@ console.log(isNaN(user.name));
 
 // && and operator
 // || or operator
+
+console.dir(document);
+console.log(document.title);
+
+document.title = "Hello";

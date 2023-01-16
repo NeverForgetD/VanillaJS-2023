@@ -41,6 +41,7 @@ body {
 .line {
     color: var(--sub-color);
     font-family: 'Press Start 2P', cursive;
+    padding: 12px;
 }
 
 .animate-blink {
