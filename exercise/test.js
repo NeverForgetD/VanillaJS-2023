@@ -73,3 +73,89 @@ console.dir(document);
 console.log(document.title);
 
 document.title = "Hello";
+
+console.dir(document.getElementsByClassName("line"));
+
+const title = document.getElementById("title");
+console.log(title.id);
+console.log(title.className);
+console.log(title);
+console.log(typeof(title));
+const text = document.getElementsByClassName("text");
+console.log(text);
+
+// We will use only querrySelector!
+const time = document.querySelector(".main-box .line:first-child");
+console.log(time);
+console.log(time.innerHTML);
+console.dir(time);
+console.log(time.style);
+
+// Event
+/*
+function handleClick() {
+    console.log("Clikced!");
+    time.style.color = "coral";
+};
+time.addEventListener("click", handleClick);
+
+function handleMouseEnter() {
+    console.log("enter");
+    time.innerText = "In";
+};
+function handleMouseLeave() {
+    console.log("leave");
+    time.innerText = "out";
+};
+time.addEventListener("mouseenter", handleMouseEnter);
+time.addEventListener("mouseleave", handleMouseLeave);
+
+//time.onmouseenter = handleMouseEnter;
+//time.onmouseleave = handleMouseLeave;
+
+function handleWindowResize() {
+    document.body.style.backgroundColor = "coral";
+};
+window.addEventListener("resize", handleWindowResize);
+
+function handleWifiOff() {
+    alert("no wifi...");
+}
+window.addEventListener("offline", handleWifiOff);
+*/
+
+const box = document.querySelector(".main-box");
+const mainText = document.querySelector(".main-box h1");
+
+function handleClick() {
+    console.log("clikced");
+    clickedClass = "clickActive";
+    
+    // using toggle!
+    mainText.classList.toggle(clickedClass);
+
+    // using class + CSS & JS
+    /*
+    if (mainText.classList.contains(clickedClass)) {
+        mainText.classList.remove(clickedClass);
+    }
+    else {
+        mainText.classList.remove(clickedClass);
+        mainText.classList.add(clickedClass);
+    }
+    */
+
+    // using if/else
+    /*
+    const currentColor = mainText.style.color;
+    let newColor;
+    if (currentColor == "white") {
+        newColor = "coral";
+    }
+    else {
+        newColor = "white";
+    }
+    mainText.style.color = newColor;
+    */
+};
+box.addEventListener("click", handleClick);

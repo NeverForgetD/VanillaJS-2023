@@ -1,6 +1,7 @@
 :root {
     --main-color: #02343F;
     --sub-color: #F0EDCC;
+    --point-color: coral;
 }
 
 @keyframes blinkAnimation {
@@ -18,6 +19,34 @@
     }
 }
 
+/*
+@keyframes changeScene {
+    0% {
+        height: 300px;
+    }
+    20% {
+        height: 300px;
+    }
+    50% {
+        height: 0px;
+    }
+    100% {
+        height: 800px;
+    }
+}
+
+@keyframes textDisapear {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
 body {
     display:flex;
     align-items: center;
@@ -26,6 +55,7 @@ body {
 }
 
 .main-box {
+    height: 300px;
     width: 80%;
     background-color: var(--main-color);
     display:flex;
@@ -37,7 +67,15 @@ body {
     border-color: var(--sub-color);
     border-radius: 10px;
 }
+/*
+.main-box:active {
+    animation: changeScene 1.4s;
+}
 
+.main-box:active .line {
+    animation: textDisapear 1.4s;
+}
+*/
 .line {
     color: var(--sub-color);
     font-family: 'Press Start 2P', cursive;
@@ -46,4 +84,12 @@ body {
 
 .animate-blink {
     animation: blinkAnimation infinite 1.2s;
+}
+
+.clickActive {
+    color: var(--point-color);
+}
+
+.text {
+    transition: color .3s ease-in-out;
 }
