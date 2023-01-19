@@ -1,0 +1,25 @@
+:root {
+    /*antique*/
+    --main-color1 : #b72818;
+    --sub-color1 : #bc6022;
+    ---pt-color1 : #e8c599;
+    
+    /*Neon*/
+    --main-color2 : #101b37;
+    --sub-color2 : #e41376;
+    ---pt-color2 : #01c8ee;
+    /**/
+    --main-color3 : #fdea79;
+    --sub-color3 : #a8a355;
+    ---pt-color3 : #4f4039;
+}
+
+.hidden {
+    display: none;
+}
+/*
+.color1 {
+    background-color: var(--main-color3);
+    color: var(--sub-color3);
+}
+*/
