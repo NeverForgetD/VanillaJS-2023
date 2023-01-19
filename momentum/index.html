@@ -8,23 +8,30 @@
     <title>Momentum</title>
 </head>
 <body class="color1">
-    <h2 class="clock"></h2>
+    <div class="box upper-box">
 
-    <form class="hidden login-form color1">
-        <input required class="color1" type="text" placeholder="what is your name?" />
-        <button class="color1">Log In</button>
-    </form>
-
-    <h1 class="hidden greeting"></h1>
+    </div>
+    <div class="clock box">
+        <span class="time"></span>
+        <span class="date"></span>
+    </div>
+    <div class="box">
+        <form class="hidden login-form color1">
+            <input required class="color1 login-blank" type="text" placeholder="what is your name?" />
+            <button class="color1 login-btn">Log In</button>
+        </form>
+    </div>
+    <div class="box">
+        <h1 class="hidden greeting"></h1>
+    </div>
+    <div class="box verse-box">
+        <span class="verse-line"></span>
+        <span class="verse-line"></span>
+    </div>
 
     <form>
         <button class="reset-btn">RESET</button>
     </form>
-
-    <div class="verse-box">
-        <span></span>
-        <span></span>
-    </div>
 
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
