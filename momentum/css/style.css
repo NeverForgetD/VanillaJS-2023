@@ -33,6 +33,11 @@ body {
     padding: 10px;
 }
 
+.timeline-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 
 .time {
     font-family: 'Roboto Mono', monospace;

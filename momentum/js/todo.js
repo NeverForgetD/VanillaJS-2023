@@ -3,6 +3,7 @@ const toDoList = document.querySelector(".todo-list");
 const toDoInput = document.querySelector(".todo-form input");
 const TODOS_KEY = "todos"
 let toDos = [];
+let doneToDos = [];
 
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
@@ -15,17 +16,90 @@ function delToDo(event) {
     saveToDos();
 }
 
+function monthGen(i) {
+    if (i === 0) {
+        return "JAN";
+    }
+    if (i === 1) {
+        return "FEB";
+    }
+    if (i === 2) {
+        return "MAR";
+    }
+    if (i === 3) {
+        return "APR";
+    }
+    if (i === 4) {
+        return "MAY";
+    }
+    if (i === 5) {
+        return "JUN";
+    }
+    if (i === 6) {
+        return "JUL";
+    }
+    if (i === 7) {
+        return "AUG";
+    }
+    if (i === 8) {
+        return "SEP";
+    }
+    if (i === 9) {
+        return "OCT";
+    }
+    if (i === 10) {
+        return "NOV";
+    }
+    if (i === 11) {
+        return "DEC";
+    } 
+} // from clock.js
+function saveDoneToDos(event) {
+    const time = new Date();
+    const hour = String(time.getHours()).padStart(2, "0");
+    const minute = String(time.getMinutes()).padStart(2, "0");
+    const monthCode = time.getMonth();
+    const month = monthGen(monthCode);
+    const date = String(time.getDate());
+
+    const timeline = `${hour}:${minute}  ${month} ${date}`;
+    const text = event.target.parentElement.firstChild.innerText;
+
+    console.log(text);
+    const doneToDoObj = {
+        timeline: timeline,
+        text: text
+    };
+    let countOnStock = localStorage.getItem("count");
+    // localStorage.setItem("count", 0); this on greeting.js
+    // init count when login
+
+    localStorage.setItem(countOnStock, JSON.stringify(doneToDoObj));
+    let numOfDone = parseInt(countOnStock);
+    numOfDone = numOfDone + 1;
+    localStorage.setItem("count", JSON.stringify(numOfDone));
+}
+
 function paintToDo(newToDo) {
     const toDoBox = document.createElement("li");
     toDoBox.id = newToDo.id
     const toDoLine = document.createElement("span");
     toDoLine.innerText = newToDo.text;
     toDoBox.appendChild(toDoLine);
+    const toDoDoneBtn = document.createElement("button");
+    toDoDoneBtn.innerText = "Complete!";
+    toDoDoneBtn.classList.add("color-btn");
     const toDoDelBtn = document.createElement("button");
-    toDoDelBtn.innerText = "X";
+    toDoDelBtn.innerText = "Delete";
     toDoDelBtn.classList.add("color-btn");
+    toDoDelBtn.classList.add("del-btn");
+
+    toDoBox.appendChild(toDoDoneBtn);
     toDoBox.appendChild(toDoDelBtn);
     toDoList.appendChild(toDoBox);
+
+    toDoDoneBtn.addEventListener("click", saveDoneToDos);
+    toDoDoneBtn.addEventListener("click", delToDo);
     toDoDelBtn.addEventListener("click", delToDo);
 }
 

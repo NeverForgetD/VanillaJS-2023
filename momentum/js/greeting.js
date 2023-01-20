@@ -11,6 +11,7 @@ function onLoginSubmit(event) {
     loginForm.classList.add(HIDDEN_CLASSNAME);
     localStorage.setItem(USERNAME_KEY, loginInput.value);
     showGreeting();
+    localStorage.setItem("count", 0);
 }
 
 function showGreeting() {
