@@ -1,8 +1,6 @@
-// alert("refresh");
 const loginInput = document.querySelector(".login-form input");
 const loginForm = document.querySelector(".login-form");
 const greeting = document.querySelector(".greeting");
-const resetBtn = document.querySelector(".reset-btn");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -25,13 +23,7 @@ function showGreeting() {
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleReset() {
-    localStorage.removeItem(USERNAME_KEY);
-}
-resetBtn.addEventListener("click", handleReset);
-
 if (savedusername === null) {
-    // no username, after reset
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 }

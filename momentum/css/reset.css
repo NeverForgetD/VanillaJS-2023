@@ -1,0 +1,11 @@
+.reset-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    border: 10px;
+    border-radius: 12px;
+}
+
+.reset-btn:hover {
+    background-color: red;
+}

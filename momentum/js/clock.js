@@ -1,4 +1,5 @@
-const clock = document.querySelector(".clock");
+const clockTime = document.querySelector(".clock .time");
+const clockDate = document.querySelector(".clock .date");
 /*
 function hello() {
     console.log("tiktok");
@@ -53,7 +54,8 @@ function showTime() {
     const month = monthGen(monthCode);
     const second = String(time.getSeconds()).padStart(2, "0");
     const date = String(time.getDate());
-    clock.innerText = `${hour}:${minute}:${second} ${month} ${date}`
+    clockTime.innerText = `${hour}:${minute}:${second}`;
+    clockDate.innerText = `${month} ${date}`;
 }
 
 showTime();

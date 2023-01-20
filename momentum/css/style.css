@@ -14,12 +14,54 @@
     ---pt-color3 : #4f4039;
 }
 
+body {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+.upper-box {
+    height: 
+}
+*/
+.time {
+    font-size: 50px;
+}
+
+.date {
+    font-size: 20px;
+    position: absolute;
+    
+}
+
+.login-blank {
+    color: blue;
+}
+.login-btn {
+    border-radius: 12px;
+}
+
+.verse-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.verse-line {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    font-size: 12px;
+}
+
 .hidden {
     display: none;
 }
-/*
+
 .color1 {
-    background-color: var(--main-color3);
-    color: var(--sub-color3);
+    background-color: var(--sub-color1);
+    color: var(--main-color1);
 }
-*/
