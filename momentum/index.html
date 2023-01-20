@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/button.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    </style>
+
     <title>Momentum</title>
 </head>
-<body class="color1">
+<body class="color-main">
     <div class="box upper-box">
         <span class="hidden location-line"></span>
         <span class="hidden weather-line"></span>
@@ -18,9 +24,9 @@
         <span class="date"></span>
     </div>
     <div class="box">
-        <form class="hidden login-form color1">
-            <input required class="color1 login-blank" type="text" placeholder="what is your name?" />
-            <button class="color1 login-btn">Log In</button>
+        <form class="hidden login-form ">
+            <input required class="color-form login-blank" type="text" placeholder="what is your name?" />
+            <button class="color-btn login-btn">Log In</button>
         </form>
     </div>
     <div class="box">
@@ -29,7 +35,7 @@
 
     <div>
         <form class="todo-form">
-            <input required type="text" placeholder="Write what to do" />
+            <input class="color-form" required type="text" placeholder="Write what to do" />
         </form>
         <ul class="todo-list"></ul>
     </div>
@@ -37,13 +43,13 @@
 
 
 
-    <div class="box verse-box">
+    <div class="color-verse box verse-box">
         <span class="verse-line"></span>
         <span class="verse-line"></span>
     </div>
 
     <form>
-        <button class="reset-btn">RESET</button>
+        <button class="color-btn reset-btn">RESET</button>
     </form>
 
     <script src="js/greeting.js"></script>

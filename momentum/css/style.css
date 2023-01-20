@@ -1,45 +1,68 @@
 :root {
-    /*antique*/
-    --main-color1 : #b72818;
-    --sub-color1 : #bc6022;
-    ---pt-color1 : #e8c599;
+    /*
+    https://colorhunt.co/
+    */
+    /*Retro*/
+    --main-color1 : rgb(235, 69, 95);
+    --sub-color1 : rgb(252, 255, 231);
+    --pt-color1 : rgb(186, 215, 233);
+    --pt2-color1 : rgb(43, 52, 103);
     
     /*Neon*/
-    --main-color2 : #101b37;
-    --sub-color2 : #e41376;
-    ---pt-color2 : #01c8ee;
-    /**/
-    --main-color3 : #fdea79;
-    --sub-color3 : #a8a355;
-    ---pt-color3 : #4f4039;
+    --main-color2 : rgb(20, 63, 107);
+    --sub-color2 : rgb(245, 83, 83);
+    --pt-color2 : rgb(254, 177, 57);
+    --pt2-color2 : rgb(246, 245, 77);
+    /*Gold*/
+    --main-color3 : rgb(254, 249, 167);
+    --sub-color3 : rgb(250, 194, 19);
+    --pt-color3 : rgb(247, 126, 33);
+    --pt2-color3 : rgb(214, 28, 78);
 }
 
 body {
+    height: 90vh;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto Mono', monospace;
 }
-/*
-.upper-box {
-    height: 
+
+.box {
+    padding: 10px;
 }
-*/
+
+
 .time {
-    font-size: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100px;
 }
 
 .date {
-    font-size: 20px;
-    position: absolute;
-    
+    font-size: 18px;
+    position: relative;
 }
 
 .login-blank {
-    color: blue;
+    padding: 10px;
+    font-size: 20px;
 }
-.login-btn {
-    border-radius: 12px;
+
+input {
+    width: 40vh;
+    font-size: 20px;
+    border-width: 0;
+    border-bottom-width: 2px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.greeting {
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .verse-box {
@@ -48,20 +71,42 @@ body {
     align-items: center;
     justify-content: center;
     width: 60%;
+    position: absolute;
+    bottom:30px;
 }
 
 .verse-line {
     display: table-cell;
     vertical-align: middle;
     text-align:center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .hidden {
     display: none;
 }
 
-.color1 {
-    background-color: var(--sub-color1);
-    color: var(--main-color1);
+.reset-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.color-main {
+    background-color: var(--main-color1);
+    color: var(--sub-color1);
+}
+.color-form {
+    background-color: var(--main-color1);
+    color: var(--sub-color1);
+    border-bottom-color: var(--sub-color1);
+}
+
+::placeholder {
+    color: var(--sub-color1);
+}
+
+.color-verse {
+    color: var(--pt-color1);
 }

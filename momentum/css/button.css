@@ -1,0 +1,48 @@
+:root {
+    /*
+    https://colorhunt.co/
+    */
+    /*Retro*/
+    --main-color1 : rgb(235, 69, 95);
+    --sub-color1 : rgb(252, 255, 231);
+    --pt-color1 : rgb(186, 215, 233);
+    --pt2-color1 : rgb(43, 52, 103);
+    
+    /*Neon*/
+    --main-color2 : rgb(20, 63, 107);
+    --sub-color2 : rgb(245, 83, 83);
+    --pt-color2 : rgb(254, 177, 57);
+    --pt2-color2 : rgb(246, 245, 77);
+    /*Gold*/
+    --main-color3 : rgb(254, 249, 167);
+    --sub-color3 : rgb(250, 194, 19);
+    --pt-color3 : rgb(247, 126, 33);
+    --pt2-color3 : rgb(214, 28, 78);
+}
+
+button {
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    height: 40px;
+    text-align:center;
+    border: 3px solid;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.color-btn {
+    background-color: var(--sub-color1);
+    border-color: var(--sub-color1);
+    color: var(--main-color1);
+}
+
+button:hover,
+button:focus {
+    scale: 1.1;
+    color: var(--sub-color1);
+    box-shadow: inset 0 0 0 2em var(--main-color1);
+}

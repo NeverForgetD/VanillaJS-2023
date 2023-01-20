@@ -22,7 +22,8 @@ function paintToDo(newToDo) {
     toDoLine.innerText = newToDo.text;
     toDoBox.appendChild(toDoLine);
     const toDoDelBtn = document.createElement("button");
-    toDoDelBtn.innerText = "X"; 
+    toDoDelBtn.innerText = "X";
+    toDoDelBtn.classList.add("color-btn");
     toDoBox.appendChild(toDoDelBtn);
     toDoList.appendChild(toDoBox);
     toDoDelBtn.addEventListener("click", delToDo);
