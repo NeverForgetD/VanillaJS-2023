@@ -1,0 +1,109 @@
+.palette-book {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -500px;
+}
+
+.palette-box {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 100px;
+}
+
+.palette {
+  width: 225px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  border-radius: 15px;
+  border: solid 3px
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  backface-visibility: hidden;
+  margin-left: -35px;
+  transform-origin: 90%;
+}
+
+.palette-main {
+  z-index: 5;
+}
+.palette-sub {
+  z-index: 4;
+}
+.palette-pt {
+  z-index: 3;
+}
+.palette-pt2 {
+  z-index: 2;
+}
+
+.palette1 {
+  border-color: rgb(252, 255, 231);
+}
+.palette1:nth-child(1) {
+  background-color: rgb(235, 69, 95);
+}
+.palette1:nth-child(2) {
+  background-color: rgb(252, 255, 231);
+}
+.palette1:nth-child(3) {
+  background-color: rgb(186, 215, 233);
+}
+.palette1:nth-child(4) {
+  background-color: rgb(43, 52, 103);
+}
+
+
+.palette2 {
+  border-color: rgb(245, 83, 83);
+}
+.palette2:nth-child(1) {
+  background-color: rgb(20, 63, 107);
+}
+.palette2:nth-child(2) {
+  background-color: rgb(245, 83, 83);
+}
+.palette2:nth-child(3) {
+  background-color: rgb(254, 177, 57);
+}
+.palette2:nth-child(4) {
+  background-color: rgb(246, 245, 77);
+}
+
+.palette3 {
+  border-color: rgb(250, 194, 19);
+}
+.palette3:nth-child(1) {
+  background-color:  rgb(254, 249, 167);
+}
+.palette3:nth-child(2) {
+  background-color: rgb(250, 194, 19);
+}
+.palette3:nth-child(3) {
+  background-color: rgb(247, 126, 33);
+}
+.palette3:nth-child(4) {
+  background-color: rgb(214, 28, 78);
+}
+
+
+
+.palette-motion1 {
+  transform: rotate(40deg);
+  transition: all 2s;
+}
+.palette-motion2 {
+  transform: rotate(15deg);
+  transition: all 2s;
+}
+.palette-motion3 {
+  transform: rotate(-15deg);
+  transition: all 2s;
+}
+.palette-motion4 {
+  transform: rotate(-40deg);
+  transition: all 2s;
+}

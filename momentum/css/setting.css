@@ -1,0 +1,107 @@
+.setting-box {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.setting-icon {
+    cursor: pointer;
+}
+
+.setting-icon-hover:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.arrow-up-icon,
+.exit-icon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding:2px;
+    border-radius: 50%;
+}
+
+.arrow-up-icon-hover:hover,
+.exit-icon-hover:hover {
+    scale:1.1;
+    transition: all 0.5s;
+}
+
+.setting-screen {
+    width: 100px;
+    position: absolute;
+    top:-220px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.theme-box {
+    width: 100px;
+    position: absolute;
+    top:-220px;
+    right:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.setting-btn {
+    
+}
+
+.screen-show {
+    transform: translateY(220px);
+    transition: all 1s;
+}
+
+.screen-hide {
+    transform: translateY();
+    transition: all 1s;
+}
+
+.theme-show {
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(220px);
+    transition: all 1s;
+}
+
+.theme-hide {
+    z-index: -2;
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+@keyframes settingBtnSmoothReshow {
+    from {
+        scale:5;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.setting-icon-reshow {
+    animation: settingBtnSmoothReshow 1s;
+}
+
+.setting-icon-hidden {
+    transform: rotate(360deg);
+    opacity: 0;
+    scale: 5;
+    transition: 1s;
+    cursor: default;
+}
+
+.theme-option {
+    
+}

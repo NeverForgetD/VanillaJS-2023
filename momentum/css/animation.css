@@ -8,7 +8,7 @@
 }
 
 body {
-    animation: initShow 2s;    
+    animation: initShow 1s;    
 }
 
 @keyframes lineShow {

@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/setting.css" />
+    <link rel="stylesheet" href="css/palette.css" />
     
+    <script src="https://kit.fontawesome.com/f3fb9e46b3.js" crossorigin="anonymous"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
     </style>
@@ -18,9 +22,47 @@
     <title>Momentum</title>
 </head>
 <body class="color-main">
+
     <div class="timeline-box">
         <button class="timeline-btn color-btn">Timeline</button>
         <div class="timeline-linebox"></div>
+    </div>
+
+    <div class="setting-box">
+        <i class="fa-solid fa-gear setting-icon-hover setting-icon fa-2x color-main"></i>
+        <div class="screen-hide setting-screen color-setting">
+            <i class="fa-solid fa-circle-xmark fa-2x exit-icon-hover exit-icon"></i>
+            <button class="setting-btn color-setting-btn reset-btn">RESET</button>
+            <button class="setting-btn color-setting-btn theme-btn">THEME</button>
+        </div>
+        <div class="theme-hide theme-box color-setting">
+            <i class="arrow-up-icon arrow-up-icon-hover fa-solid fa-circle-arrow-up fa-2x"></i>
+            <div class="theme-option"><button class="setting-btn color-setting-btn">Theme1</button></div>
+            <div class="theme-option"><button class="setting-btn color-setting-btn">Theme2</button></div>
+            <div class="theme-option"><button class="setting-btn color-setting-btn">Theme3</button></div>
+        </div>
+        <!--
+        <div class="palette-book">
+            <div class="palette-box palette-box1">
+            <div class="palette palette1 palette-main"></div>
+            <div class="palette palette1 palette-sub"></div>
+            <div class="palette palette1 palette-pt"></div>
+            <div class="palette palette1 palette-pt2"></div>
+            </div>
+            <div class="palette-box palette-box2">
+            <div class="palette palette2"></div>
+            <div class="palette palette2"></div>
+            <div class="palette palette2"></div>
+            <div class="palette palette2"></div>
+            </div>
+            <div class="palette-box palette-box3">
+            <div class="palette palette3"></div>
+            <div class="palette palette3"></div>
+            <div class="palette palette3"></div>
+            <div class="palette palette3"></div>
+            </div>
+        </div>
+    -->
     </div>
 
     <div class="box upper-box">
@@ -45,7 +87,6 @@
         <form class="todo-form">
             <input class="color-form" required type="text" placeholder="Write what to do" />
         </form>
-
         <div class="todo-list"></div>
     </div>
     
@@ -54,15 +95,12 @@
         <span class="verse-line"></span>
     </div>
 
-    <form>
-        <button class="color-btn reset-btn">RESET</button>
-    </form>
 
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/verse.js"></script>
-    <script src="js/reset.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/setting.js"></script>
 </body>
 </html>

@@ -38,6 +38,39 @@
     color: var(--pt-color1);
 }
 
-/*
-color of btn is in button.css
-*/
+.color-setting {
+    background-color: var(--sub-color1);
+    color: var(--main-color1);
+}
+
+.color-btn {
+    background-color: var(--sub-color1);
+    border-color: var(--sub-color1);
+    color: var(--main-color1);
+}
+
+.color-btn:hover,
+.color-btn:focus {
+    scale: 1.1;
+    color: var(--sub-color1);
+    box-shadow: inset 0 0 0 2em var(--main-color1);
+}
+
+.color-setting-btn {
+    background-color: var(--main-color1);
+    border-color: var(--main-color1);
+    color: var(--sub-color1);
+}
+
+.color-setting-btn:hover,
+.color-setting-btn:focus {
+    scale: 1.1;
+    color: var(--main-color1);
+    box-shadow: inset 0 0 0 2em var(--sub-color1);
+}
+
+.arrow-up-icon-hover:hover,
+.exit-icon-hover:hover {
+    color: var(--sub-color1);
+    background-color: var(--main-color1);
+}
