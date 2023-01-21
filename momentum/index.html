@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="css/color.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/button.css" />
-
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
     </style>
@@ -15,8 +18,12 @@
     <title>Momentum</title>
 </head>
 <body class="color-main">
-    <div class="box upper-box">
+    <div class="timeline-box">
         <button class="timeline-btn color-btn">Timeline</button>
+        <div class="timeline-linebox"></div>
+    </div>
+
+    <div class="box upper-box">
         <span class="hidden location-line"></span>
         <span class="hidden weather-line"></span>
     </div>
@@ -34,16 +41,14 @@
         <h1 class="hidden greeting"></h1>
     </div>
 
-    <div>
+    <div class="box">
         <form class="todo-form">
             <input class="color-form" required type="text" placeholder="Write what to do" />
         </form>
-        <ul class="todo-list"></ul>
+
+        <div class="todo-list"></div>
     </div>
     
-
-
-
     <div class="color-verse box verse-box">
         <span class="verse-line"></span>
         <span class="verse-line"></span>

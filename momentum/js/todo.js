@@ -81,21 +81,34 @@ function saveDoneToDos(event) {
 }
 
 function paintToDo(newToDo) {
-    const toDoBox = document.createElement("li");
+    const toDoBox = document.createElement("div");
+    toDoBox.classList.add("todo-box");
     toDoBox.id = newToDo.id
+
+    const toDoLineBox = document.createElement("div");
+    toDoLineBox.classList.add("todo-line-box");
+
     const toDoLine = document.createElement("span");
     toDoLine.innerText = newToDo.text;
-    toDoBox.appendChild(toDoLine);
+    
+    const toDoBtnBox = document.createElement("div");
+
     const toDoDoneBtn = document.createElement("button");
     toDoDoneBtn.innerText = "Complete!";
     toDoDoneBtn.classList.add("color-btn");
+
     const toDoDelBtn = document.createElement("button");
     toDoDelBtn.innerText = "Delete";
     toDoDelBtn.classList.add("color-btn");
     toDoDelBtn.classList.add("del-btn");
 
-    toDoBox.appendChild(toDoDoneBtn);
-    toDoBox.appendChild(toDoDelBtn);
+    toDoBox.appendChild(toDoLineBox);
+    toDoLineBox.appendChild(toDoLine);
+
+    toDoBox.appendChild(toDoBtnBox);
+    toDoBtnBox.appendChild(toDoDoneBtn);
+    toDoBtnBox.appendChild(toDoDelBtn);
+
     toDoList.appendChild(toDoBox);
 
     toDoDoneBtn.addEventListener("click", saveDoneToDos);

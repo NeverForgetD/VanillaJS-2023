@@ -1,0 +1,11 @@
+.timeline-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+    top:10px;
+}
+/*
+.timeline-linebox {
+}
+*/

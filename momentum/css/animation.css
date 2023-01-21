@@ -1,0 +1,28 @@
+@keyframes initShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+body {
+    animation: initShow 2s;    
+}
+
+@keyframes lineShow {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.beforeshow {
+    display: hidden;
+}
+.show {
+    animation: lineShow 2s forwards;
+}
