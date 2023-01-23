@@ -4,27 +4,10 @@
     */
 
     /*cuttent*/
-    --main-color : rgb(235, 69, 95);
-    --sub-color : rgb(252, 255, 231);
-    --pt-color : rgb(186, 215, 233);
-    --pt2-color : rgb(43, 52, 103);
-
-    /*Retro*/
-    --main-color1 : rgb(235, 69, 95);
-    --sub-color1 : rgb(252, 255, 231);
-    --pt-color1 : rgb(186, 215, 233);
-    --pt2-color1 : rgb(43, 52, 103);
-    
-    /*Neon*/
-    --main-color2 : rgb(20, 63, 107);
-    --sub-color2 : rgb(245, 83, 83);
-    --pt-color2 : rgb(254, 177, 57);
-    --pt2-color2 : rgb(246, 245, 77);
-    /*Gold*/
-    --main-color3 : rgb(254, 249, 167);
-    --sub-color3 : rgb(250, 194, 19);
-    --pt-color3 : rgb(247, 126, 33);
-    --pt2-color3 : rgb(214, 28, 78);
+    --main-color : rgb(194, 222, 209);
+    --sub-color : rgb(53, 66, 89);
+    --pt-color : rgb(205, 194, 174);
+    --pt2-color : rgb(205, 194, 174);
 }
 
 .color-main {
@@ -35,19 +18,28 @@
 .color-form {
     background-color: var(--main-color);
     color: var(--sub-color);
-    border-bottom-color: var(--sub-color);
+    border-bottom-color: var(--pt-color);
+}
+
+.time {
+    -webkit-text-stroke: 3px var(--sub-color);
+    color: var(--main-color);
+}
+
+.date {
+    color: var(--sub-color-color);
 }
 
 ::placeholder {
-    color: var(--sub-color);
-}
-
-.color-verse {
     color: var(--pt-color);
 }
 
+.color-verse {
+    color: var(--pt2-color);
+}
+
 .color-setting {
-    background-color: var(--sub-color);
+    background-color: var(--pt-color);
     color: var(--main-color);
 }
 
@@ -67,18 +59,18 @@
 .color-setting-btn {
     background-color: var(--main-color);
     border-color: var(--main-color);
-    color: var(--sub-color);
+    color: var(--pt-color);
 }
 
 .color-setting-btn:hover,
 .color-setting-btn:focus {
     scale: 1.1;
     color: var(--main-color);
-    box-shadow: inset 0 0 0 2em var(--sub-color);
+    box-shadow: inset 0 0 0 2em var(--pt-color);
 }
 
 .arrow-up-icon-hover:hover,
 .exit-icon-hover:hover {
-    color: var(--sub-color);
-    background-color: var(--main-color);
+    color: var(--main-color);
+    background-color: var(--pt-color);
 }
