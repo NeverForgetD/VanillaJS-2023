@@ -12,28 +12,30 @@ const root = document.querySelector(":root");
 const mainColor1 = "rgb(194, 222, 209)";
 const subColor1 = "rgb(53, 66, 89)";
 const ptColor1 = "rgb(205, 194, 174)";
-const pt2color1 = " rgb(205, 194, 174)";
+const pt2Color1 = "rgb(205, 194, 174)";
 
 const mainColor2 = "rgb(20, 63, 107)";
 const subColor2 = "rgb(254, 177, 57)";
 const ptColor2 = " rgb(245, 83, 83";
-const pt2color2 = "rgb(246, 245, 77)";
+const pt2Color2 = "rgb(246, 245, 77)";
 
 const mainColor3 = "rgb(223, 120, 97)";
 const subColor3 = "rgb(212, 226, 212)";
 const ptColor3 = "rgb(236, 179, 144)";
-const pt2color3 = "rgb(252, 248, 232)";
+const pt2Color3 = "rgb(252, 248, 232)";
 
 const mainColor4 = "rgb(217, 228, 221)";
 const subColor4 = "rgb(85, 85, 85)";
 const ptColor4 = "rgb(205, 201, 195)"
-const pt2color4 = "rgb(251, 247, 240)"
+const pt2Color4 = "rgb(251, 247, 240)"
 
 function themeChange1() {
     root.style.setProperty('--main-color', mainColor1);
     root.style.setProperty('--sub-color', subColor1);
     root.style.setProperty('--pt-color', ptColor1);
     root.style.setProperty('--pt2-color', pt2Color1);
+
+    localStorage.setItem("currentTheme","theme1");
 }
 //themeBtn1.addEventListener("mouseenter", themeChange1);
 themeBtn1.addEventListener("click", themeChange1);
@@ -43,6 +45,8 @@ function themeChange2() {
     root.style.setProperty('--sub-color', subColor2);
     root.style.setProperty('--pt-color', ptColor2);
     root.style.setProperty('--pt2-color', pt2Color2);
+
+    localStorage.setItem("currentTheme","theme2");
 }
 
 //themeBtn2.addEventListener("mouseenter", themeChange2);
@@ -53,6 +57,8 @@ function themeChange3() {
     root.style.setProperty('--sub-color', subColor3);
     root.style.setProperty('--pt-color', ptColor3);
     root.style.setProperty('--pt2-color', pt2Color3);
+
+    localStorage.setItem("currentTheme","theme3");
 }
 //themeBtn3.addEventListener("mouseenter", themeChange3);
 themeBtn3.addEventListener("click", themeChange3);
@@ -62,6 +68,24 @@ function themeChange4() {
     root.style.setProperty('--sub-color', subColor4);
     root.style.setProperty('--pt-color', ptColor4);
     root.style.setProperty('--pt2-color', pt2Color4);
+
+    localStorage.setItem("currentTheme","theme4");
 }
 //themeBtn4.addEventListener("mouseenter", themeChange3);
 themeBtn4.addEventListener("click", themeChange4);
+
+
+const THEME_STATUS = localStorage.getItem("currentTheme");
+if (THEME_STATUS == "theme1") {
+    themeChange1();
+}
+else if (THEME_STATUS == "theme2") {
+    themeChange2();
+}
+else if (THEME_STATUS == "theme3") {
+    themeChange3();
+    console.log("this 3");
+}
+else if (THEME_STATUS == "theme4") {
+    themeChange4();
+}
