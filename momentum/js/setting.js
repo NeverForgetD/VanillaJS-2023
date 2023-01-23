@@ -50,10 +50,10 @@ function settingHide() {
 }
 exitBtn.addEventListener("click", settingHide);
 */
+const themeOption = document.querySelector(".theme-option");
 
 function themeToggle() {
     showSetting();
-
     themeScreen.classList.toggle("theme-show");
     themeScreen.classList.toggle("theme-hide");
 }
@@ -67,20 +67,11 @@ function goBackSetting() {
 }
 goBackBtn.addEventListener("click", goBackSetting);
 
-//테마 변경
-/*
-const themeBtn1 = document.querySelector(".theme-option:nth-child(1)");
-const themeBtn2 = document.querySelector(".theme-option:nth-child(1)");
-const themeBtn3 = document.querySelector(".theme-option:nth-child(1)");
-
-const palette1 = document.querySelector(".palette-box1");
-const palette2 = document.querySelector(".palette2");
-const palette3 = document.querySelector(".palette3");
-*/
 function handleReset() {
     let reallyReset = confirm("정말로 리셋하시겠습니까?");
     if (reallyReset) {
         localStorage.clear();
+        location.reload();
     }
 }
 resetBtn.addEventListener("click", handleReset);

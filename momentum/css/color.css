@@ -2,6 +2,13 @@
     /*
     https://colorhunt.co/
     */
+
+    /*cuttent*/
+    --main-color : rgb(235, 69, 95);
+    --sub-color : rgb(252, 255, 231);
+    --pt-color : rgb(186, 215, 233);
+    --pt2-color : rgb(43, 52, 103);
+
     /*Retro*/
     --main-color1 : rgb(235, 69, 95);
     --sub-color1 : rgb(252, 255, 231);
@@ -21,56 +28,57 @@
 }
 
 .color-main {
-    background-color: var(--main-color1);
-    color: var(--sub-color1);
+    background-color: var(--main-color);
+    color: var(--sub-color);
 }
+
 .color-form {
-    background-color: var(--main-color1);
-    color: var(--sub-color1);
-    border-bottom-color: var(--sub-color1);
+    background-color: var(--main-color);
+    color: var(--sub-color);
+    border-bottom-color: var(--sub-color);
 }
 
 ::placeholder {
-    color: var(--sub-color1);
+    color: var(--sub-color);
 }
 
 .color-verse {
-    color: var(--pt-color1);
+    color: var(--pt-color);
 }
 
 .color-setting {
-    background-color: var(--sub-color1);
-    color: var(--main-color1);
+    background-color: var(--sub-color);
+    color: var(--main-color);
 }
 
 .color-btn {
-    background-color: var(--sub-color1);
-    border-color: var(--sub-color1);
-    color: var(--main-color1);
+    background-color: var(--sub-color);
+    border-color: var(--sub-color);
+    color: var(--main-color);
 }
 
 .color-btn:hover,
 .color-btn:focus {
     scale: 1.1;
-    color: var(--sub-color1);
-    box-shadow: inset 0 0 0 2em var(--main-color1);
+    color: var(--sub-color);
+    box-shadow: inset 0 0 0 2em var(--main-color);
 }
 
 .color-setting-btn {
-    background-color: var(--main-color1);
-    border-color: var(--main-color1);
-    color: var(--sub-color1);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--sub-color);
 }
 
 .color-setting-btn:hover,
 .color-setting-btn:focus {
     scale: 1.1;
-    color: var(--main-color1);
-    box-shadow: inset 0 0 0 2em var(--sub-color1);
+    color: var(--main-color);
+    box-shadow: inset 0 0 0 2em var(--sub-color);
 }
 
 .arrow-up-icon-hover:hover,
 .exit-icon-hover:hover {
-    color: var(--sub-color1);
-    background-color: var(--main-color1);
+    color: var(--sub-color);
+    background-color: var(--main-color);
 }
