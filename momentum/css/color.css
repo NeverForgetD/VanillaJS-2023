@@ -4,10 +4,10 @@
     */
 
     /*cuttent*/
-    --main-color : rgb(194, 222, 209);
-    --sub-color : rgb(53, 66, 89);
-    --pt-color : rgb(205, 194, 174);
-    --pt2-color : rgb(205, 194, 174);
+    --main-color : black;
+    --sub-color : white;
+    --pt-color : grey;
+    --pt2-color : grey;
 }
 
 .color-main {
@@ -30,6 +30,9 @@
     color: var(--sub-color-color);
 }
 
+input:focus {
+    color: var(--pt-color);
+}
 ::placeholder {
     color: var(--pt-color);
 }
@@ -73,4 +76,11 @@
 .exit-icon-hover:hover {
     color: var(--main-color);
     background-color: var(--pt-color);
+}
+
+.todo-box {
+    border-bottom: 1px dotted;
+    border-color: var(--pt-color);
+.todo-box:last-child {
+    border: none;
 }

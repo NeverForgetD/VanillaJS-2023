@@ -2,32 +2,34 @@ const themeBtn1 = document.getElementById("theme-btn1");
 const themeBtn2 = document.getElementById("theme-btn2");
 const themeBtn3 = document.getElementById("theme-btn3");
 const themeBtn4 = document.getElementById("theme-btn4");
-
-const palette1 = document.querySelector(".palette-box1");
-const palette2 = document.querySelector(".palette-box2");
-const palette4 = document.querySelector(".palette-box4");
+const themeBtn5 = document.getElementById("theme-btn5");
 
 const root = document.querySelector(":root");
 
-const mainColor1 = "rgb(194, 222, 209)";
-const subColor1 = "rgb(53, 66, 89)";
-const ptColor1 = "rgb(205, 194, 174)";
-const pt2Color1 = "rgb(205, 194, 174)";
+const mainColor1 = "black";
+const subColor1 = "white";
+const ptColor1 = "grey";
+const pt2Color1 = "grey";
 
 const mainColor2 = "rgb(20, 63, 107)";
 const subColor2 = "rgb(254, 177, 57)";
 const ptColor2 = " rgb(245, 83, 83";
 const pt2Color2 = "rgb(246, 245, 77)";
 
-const mainColor3 = "rgb(223, 120, 97)";
-const subColor3 = "rgb(212, 226, 212)";
-const ptColor3 = "rgb(236, 179, 144)";
-const pt2Color3 = "rgb(252, 248, 232)";
+const mainColor3 = "rgb(245, 237, 206)";
+const subColor3 = "rgb(26, 0, 0)";
+const ptColor3 = "rgb(137, 196, 225)";
+const pt2Color3 = "rgb(88, 40, 127)";
 
-const mainColor4 = "rgb(217, 228, 221)";
-const subColor4 = "rgb(85, 85, 85)";
-const ptColor4 = "rgb(205, 201, 195)"
-const pt2Color4 = "rgb(251, 247, 240)"
+const mainColor4 = "rgb(60, 42, 33)";
+const subColor4 = "rgb(213, 206, 163)";
+const ptColor4 = "rgb(26, 18, 11)";
+const pt2Color4 = "rgb(229, 229, 203)";
+
+const mainColor5 = "rgb(188, 96, 34)";
+const subColor5 = "rgb(232,197,153)";
+const ptColor5 = "rgb(183, 40, 24)";
+const pt2Color5 = "rgb(183, 40, 24)";
 
 function themeChange1() {
     root.style.setProperty('--main-color', mainColor1);
@@ -74,6 +76,16 @@ function themeChange4() {
 //themeBtn4.addEventListener("mouseenter", themeChange3);
 themeBtn4.addEventListener("click", themeChange4);
 
+function themeChange5() {
+    root.style.setProperty('--main-color', mainColor5);
+    root.style.setProperty('--sub-color', subColor5);
+    root.style.setProperty('--pt-color', ptColor5);
+    root.style.setProperty('--pt2-color', pt2Color5);
+
+    localStorage.setItem("currentTheme","theme5");
+}
+//themeBtn4.addEventListener("mouseenter", themeChange3);
+themeBtn5.addEventListener("click", themeChange5);
 
 const THEME_STATUS = localStorage.getItem("currentTheme");
 if (THEME_STATUS == "theme1") {
@@ -84,8 +96,10 @@ else if (THEME_STATUS == "theme2") {
 }
 else if (THEME_STATUS == "theme3") {
     themeChange3();
-    console.log("this 3");
 }
 else if (THEME_STATUS == "theme4") {
     themeChange4();
+}
+else if (THEME_STATUS == "theme5") {
+    themeChange5();
 }
