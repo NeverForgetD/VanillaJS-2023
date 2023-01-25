@@ -67,6 +67,10 @@ input:focus {
     align-items: center;
 }
 
+.todo-line-box span {
+    font-size: 20px;
+}
+
 .verse-box {
     display: flex;
     flex-direction: column;

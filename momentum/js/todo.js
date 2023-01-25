@@ -99,6 +99,7 @@ function paintToDo(newToDo) {
 
     const toDoDelBtn = document.createElement("button");
     toDoDelBtn.innerText = "Delete";
+    
     toDoDelBtn.classList.add("color-btn");
     toDoDelBtn.classList.add("del-btn");
 
