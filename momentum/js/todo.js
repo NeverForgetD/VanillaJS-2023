@@ -63,9 +63,8 @@ function saveDoneToDos(event) {
     const date = String(time.getDate());
 
     const timeline = `${hour}:${minute}  ${month} ${date}`;
-    const text = event.target.parentElement.firstChild.innerText;
+    const text = event.target.parentElement.parentElement.firstChild.firstChild.innerText;
 
-    console.log(text);
     const doneToDoObj = {
         timeline: timeline,
         text: text

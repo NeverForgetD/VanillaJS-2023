@@ -9,7 +9,7 @@ const root = document.querySelector(":root");
 const mainColor1 = "black";
 const subColor1 = "white";
 const ptColor1 = "grey";
-const pt2Color1 = "grey";
+const pt2Color1 = "white";
 
 const mainColor2 = "rgb(20, 63, 107)";
 const subColor2 = "rgb(254, 177, 57)";
@@ -29,7 +29,7 @@ const pt2Color4 = "rgb(229, 229, 203)";
 const mainColor5 = "rgb(188, 96, 34)";
 const subColor5 = "rgb(232,197,153)";
 const ptColor5 = "rgb(183, 40, 24)";
-const pt2Color5 = "rgb(183, 40, 24)";
+const pt2Color5 = "rgb(232,197,153)";
 
 function themeChange1() {
     root.style.setProperty('--main-color', mainColor1);
