@@ -31,13 +31,23 @@ const subColor5 = "rgb(232,197,153)";
 const ptColor5 = "rgb(183, 40, 24)";
 const pt2Color5 = "rgb(232,197,153)";
 
+const allThemeBtns = document.querySelectorAll(".setting-btn")
+function deactivateThemeBtn() {
+    let i = 0;
+    for (i = 0; i < allThemeBtns.length; i++) {
+        allThemeBtns[i].classList.remove("color-setting-btn-active");
+    }
+}
+
 function themeChange1() {
     root.style.setProperty('--main-color', mainColor1);
     root.style.setProperty('--sub-color', subColor1);
     root.style.setProperty('--pt-color', ptColor1);
     root.style.setProperty('--pt2-color', pt2Color1);
 
-    localStorage.setItem("currentTheme","theme1");
+    deactivateThemeBtn();
+    themeBtn1.classList.add("color-setting-btn-active");
+    localStorage.setItem("currentTheme","theme1"); 
 }
 //themeBtn1.addEventListener("mouseenter", themeChange1);
 themeBtn1.addEventListener("click", themeChange1);
@@ -48,6 +58,8 @@ function themeChange2() {
     root.style.setProperty('--pt-color', ptColor2);
     root.style.setProperty('--pt2-color', pt2Color2);
 
+    deactivateThemeBtn();
+    themeBtn2.classList.add("color-setting-btn-active");
     localStorage.setItem("currentTheme","theme2");
 }
 
@@ -60,6 +72,8 @@ function themeChange3() {
     root.style.setProperty('--pt-color', ptColor3);
     root.style.setProperty('--pt2-color', pt2Color3);
 
+    deactivateThemeBtn();
+    themeBtn3.classList.add("color-setting-btn-active");
     localStorage.setItem("currentTheme","theme3");
 }
 //themeBtn3.addEventListener("mouseenter", themeChange3);
@@ -71,9 +85,11 @@ function themeChange4() {
     root.style.setProperty('--pt-color', ptColor4);
     root.style.setProperty('--pt2-color', pt2Color4);
 
+    deactivateThemeBtn();
+    themeBtn4.classList.add("color-setting-btn-active");
     localStorage.setItem("currentTheme","theme4");
 }
-//themeBtn4.addEventListener("mouseenter", themeChange3);
+//themeBtn4.addEventListener("mouseenter", themeChange4);
 themeBtn4.addEventListener("click", themeChange4);
 
 function themeChange5() {
@@ -82,9 +98,11 @@ function themeChange5() {
     root.style.setProperty('--pt-color', ptColor5);
     root.style.setProperty('--pt2-color', pt2Color5);
 
+    deactivateThemeBtn();
+    themeBtn5.classList.add("color-setting-btn-active");
     localStorage.setItem("currentTheme","theme5");
 }
-//themeBtn4.addEventListener("mouseenter", themeChange3);
+//themeBtn5.addEventListener("mouseenter", themeChange5);
 themeBtn5.addEventListener("click", themeChange5);
 
 const THEME_STATUS = localStorage.getItem("currentTheme");

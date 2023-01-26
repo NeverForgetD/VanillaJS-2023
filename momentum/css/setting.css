@@ -58,11 +58,13 @@
 }
 */
 .screen-show {
+    opacity: 1;
     transform: translateY(220px);
     transition: all 1s;
 }
 
 .screen-hide {
+    opacity: 0;
     transform: translateY();
     transition: all 1s;
 }

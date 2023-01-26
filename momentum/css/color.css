@@ -70,6 +70,12 @@ input:focus {
     box-shadow: inset 0 0 0 2em var(--pt-color);
 }
 
+.color-setting-btn-active {
+    scale: 1.1;
+    color: var(--main-color);
+    box-shadow: inset 0 0 0 2em var(--pt-color);
+}
+
 .arrow-up-icon-hover:hover,
 .exit-icon-hover:hover {
     color: var(--main-color);
@@ -84,12 +90,6 @@ input:focus {
     border: none;
 }
 
-.timeline-btn-active {
-    scale: 1.1;
-    color: var(--sub-color);
-    box-shadow: inset 0 0 0 2em var(--main-color);
-}
-
 .timeline-text {
     color: var(--pt2-color);
 }
@@ -100,4 +100,11 @@ input:focus {
 .timeline-text:hover {
     color: var(--pt-color);
     background-color: var(--pt2-color);;
+}
+
+.timeline-btn-active {
+    scale: 1.1;
+    color: var(--sub-color);
+    box-shadow: inset 0 0 0 2em var(--main-color);
+    opacity: 80%;
 }
