@@ -8,8 +8,8 @@ const root = document.querySelector(":root");
 
 const mainColor1 = "black";
 const subColor1 = "white";
-const ptColor1 = "grey";
-const pt2Color1 = "white";
+const ptColor1 = "gray";
+const pt2Color1 = "yellow";
 
 const mainColor2 = "rgb(20, 63, 107)";
 const subColor2 = "rgb(254, 177, 57)";
@@ -21,15 +21,15 @@ const subColor3 = "rgb(26, 0, 0)";
 const ptColor3 = "rgb(137, 196, 225)";
 const pt2Color3 = "rgb(88, 40, 127)";
 
-const mainColor4 = "rgb(60, 42, 33)";
-const subColor4 = "rgb(213, 206, 163)";
-const ptColor4 = "rgb(26, 18, 11)";
-const pt2Color4 = "rgb(229, 229, 203)";
+const mainColor4 = "rgb(0,98,65)";
+const subColor4 = "rgb(212,233,226)";
+const ptColor4 = "rgb(30, 57, 50)";
+const pt2Color4 = "rgb(0, 117, 74)";
 
-const mainColor5 = "rgb(188, 96, 34)";
-const subColor5 = "rgb(232,197,153)";
-const ptColor5 = "rgb(183, 40, 24)";
-const pt2Color5 = "rgb(232,197,153)";
+const mainColor5 = "rgb(226, 27, 77)";
+const subColor5 = "rgb(255, 211, 0)";
+const ptColor5 = "rgb(244, 235, 238)";
+const pt2Color5 = "rgb(0, 11, 141)";
 
 const allThemeBtns = document.querySelectorAll(".setting-btn")
 function deactivateThemeBtn() {
