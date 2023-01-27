@@ -19,6 +19,7 @@ body {
 }
 
 .date {
+    font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     position: relative;
 }
@@ -98,7 +99,8 @@ input,
     font-size: 14px;
 }
 .verse-line:nth-child(2) {
-    font-size: 12px; 
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .hidden {
