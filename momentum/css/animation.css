@@ -11,15 +11,6 @@ body {
     animation: initShow 1s;    
 }
 
-@keyframes lineShow {
-    0% {
-        transform: translateX(-50px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .beforeshow {
     display: hidden;
 }

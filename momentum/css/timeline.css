@@ -77,3 +77,21 @@
 .timeline-hidden {
     display: none;
 }
+
+@media (max-width: 767px) {
+    .timeline-show {
+        z-index: 5;
+    }
+    .timeline-linebox {
+        width: 80vw;
+        opacity: 1;
+    }
+    .timeline-text {
+        font-size: 12px;
+    }
+    .timeline-text p:last-child {
+        font-family: 'fira code';
+    }
+
+
+}

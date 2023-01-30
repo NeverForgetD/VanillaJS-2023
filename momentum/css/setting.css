@@ -109,3 +109,12 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media (max-width: 767px) {
+    .theme-box,
+    .setting-screen {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+}
